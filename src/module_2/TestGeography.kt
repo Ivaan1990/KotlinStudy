@@ -1,3 +1,5 @@
+package module_2
+
 fun main(args: Array<String>){
     println("Тест на знание Географии")
     val varOfAnswers = "Введите вариант ответа: "

@@ -1,3 +1,5 @@
+package module_1
+
 fun main(args: Array<String>){
     print("Введите число 'a' ")
     var a: Int = readLine().toString().toInt()
