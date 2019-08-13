@@ -40,7 +40,6 @@ fun inputMonth(): Int {
         months = 36
     }
     return months
-
 }
 
 fun montlyIncrease(sum: Int, months: Int, percent: Int){
