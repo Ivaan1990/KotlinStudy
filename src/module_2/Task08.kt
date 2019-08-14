@@ -17,7 +17,7 @@ fun main(args: Array<String>){
     var percent: Int = input()
 
     depositInfo(sum, months, percent)
-    montlyIncrease(sum, months, percent)
+    print(montlyIncrease(sum, months, percent))
 }
 
 fun input(): Int {
@@ -32,17 +32,16 @@ fun inputMonth(): Int {
     val error: String = "Введено недопустимое значение для срока вклада"
     var months: Int = input()
     if(months < 3) {
-        println(error)
+        println(error + " '$months'")
         months = 3
     }
     else if(months > 36) {
-        println(error)
+        println(error + " '$months'")
         months = 36
     }
     return months
 }
 
-fun montlyIncrease(sum: Int, months: Int, percent: Int){
-    //S = 50000 + 50000 * 10,5 * 30 / 365 / 100 = 50431,51
-
+fun montlyIncrease(sum: Int, months: Int, percent: Int): Int{
+    return (sum + sum * percent / 365 / 100) / months
 }
