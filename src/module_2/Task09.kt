@@ -7,15 +7,15 @@ fun main(args: Array<String>){
     table[2] = arrayOf("Рубли", "Доллары", "Канадский доллар")
 
     println("Страна Столица Валюта\t")
-    var count = 0
-    var count2 = 0
+    var countRow = 0
+    var countCell = 0
     for(row in table){
         for(cell in row){
-            var elem = table[count2++][count]
+            var elem = table[countCell++][countRow]
             print("$elem\t")
         }
-        count++
-        count2 = 0
+        countRow++
+        countCell = 0
         println()
     }
 }
