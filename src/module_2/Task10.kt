@@ -53,9 +53,9 @@ fun printAllTowns(towns: List<String>) {
 /**
  * Выводим все названия городов без повторов
  */
-fun printAllTownsWithoutRepetition(names: List<String>){
+fun printAllTownsWithoutRepetition(towns: List<String>){
     println("Все введённые города без повторов:")
-    val setOfNames: Set<String> = names.toSet()
+    val setOfNames: Set<String> = towns.toSet()
     for(name in setOfNames){
         println(name)
     }
