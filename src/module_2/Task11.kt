@@ -18,8 +18,10 @@ fun main() {
             }
             println("Введите любой символ чтобы выйти из программы, или повторите ввод цифры:")
         }
-        catch (ex: NumberFormatException){
+        catch (ex: Exception){
             print("Программа завершена")
+        }
+        finally {
             break
         }
     }
