@@ -1,6 +1,6 @@
 package module_2
 
-fun main(){
+fun main(args: Array<String>){
     val towns = arrayListOf<String>()
     loop@ while(true){
         commandInfo()
@@ -19,6 +19,7 @@ fun main(){
         }
     }
 }
+
 
 /**
  * Информация по доступным функциям программы

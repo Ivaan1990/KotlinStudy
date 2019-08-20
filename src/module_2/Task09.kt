@@ -11,7 +11,7 @@ fun main(args: Array<String>){
     var countCell = 0
     for(row in table){
         for(cell in row){
-            var elem = table[countCell++][countRow]
+            val elem = table[countCell++][countRow]
             print("$elem\t")
         }
         countRow++
