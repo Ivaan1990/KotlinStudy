@@ -9,7 +9,7 @@
  */
 
 fun main(args: Array<String>){
-    val empName: String = "Иван Иваныч++ Иванов"
+    val empName: String = "Иван Иваныч Иванов"
     val position: String = "Слесарь"
     val age: Int = 30
     val marital: String = "Женат"

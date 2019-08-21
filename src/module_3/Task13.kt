@@ -1,13 +1,12 @@
 package module_3
-/*
-Напишите функцию, принимающую на вход имена сотрудников и возвращающую их количество.
-Используйте для этого vararg, из предыдущей темы.
- */
 
-fun main(args: Array<String>){
-    print(countEmp("Иван", "Вася", "Петя", "Владимир"))
+fun main(){
+    val employe1 = "Ivan"
+    val employe2 = "Vasya"
+    val employe3 = "Borya"
+    print(sumEmployes(employe1, employe2, employe3))
 }
 
-fun countEmp(vararg names: String): Int{
+fun sumEmployes(vararg names: String):Int {
     return names.size
 }
