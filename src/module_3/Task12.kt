@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
 
-fun main(){
+fun main(args: Array<String>){
     //val input: Int = readLine().toString().toInt()
 //    getDaysInYear(input)
     val currentDate = Calendar.getInstance()
