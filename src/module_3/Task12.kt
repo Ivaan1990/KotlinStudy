@@ -5,10 +5,13 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 fun main(args: Array<String>){
-    print(getDaysInYear(2016))
+    if(infoLeapYear(2017))
+        print("Высокосный год")
+    else
+        print("Не высокосный год")
 }
 
-fun getDaysInYear(year: Int): Boolean {
+fun infoLeapYear(year: Int): Boolean {
     val calendar = GregorianCalendar()
     return calendar.isLeapYear(year)
 }
