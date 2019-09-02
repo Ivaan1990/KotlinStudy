@@ -14,10 +14,10 @@ package module_4
 
 class Aircraft {
     val farAway: Int = 100_000
-    val oil: Int = 10_000
+    val oilCapacity: Int = 10_000
 
     var needFullOil: Double = 0.0
-        get() = (farAway / oil).toDouble()
+        get() = (farAway / oilCapacity).toDouble()
 }
 
 fun main(){
