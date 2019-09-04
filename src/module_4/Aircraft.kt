@@ -1,26 +1,18 @@
 package module_4
 /*
-Поможем авиакомпании в создании программы для учета авиапарка.
+Задание 17: Авиакомпания 1
 
-Создайте класс Aircraft и реализуйте в нем свойства, содержащие следующее:
-максимальная дальность полета,
-вместимость бака,
-расход топлива на 100 км.
-Установите значения по своему усмотрению.
-
-Переопределите геттер свойства содержащего расход топлива,
-чтобы он самостоятельно рассчитывался из свойств дальности полета и вместимости бака.
+Задание 18: Авиакомпания 2. Конструктор
  */
 
-class Aircraft {
-    val farAway: Int = 100_000
-    val oilCapacity: Int = 10_000
+abstract class Aircraft(farAway: Int, oilCapacity: Int): Passenger {
+    protected val farAway: Int = farAway
+    protected val oilCapacity: Int = oilCapacity
 
-    var needFullOil: Double = 0.0
+    protected var needFullOil: Double = 0.0
         get() = (farAway / oilCapacity).toDouble()
-}
 
-fun main(){
-    val boing: Aircraft = Aircraft()
-    print("Расход топлива " + boing.needFullOil)
+    internal open fun info(){
+        print("Дальность полёта самолета $farAway\nВместимость бака $oilCapacity\nРасход топлива $needFullOil")
+    }
 }
